@@ -1,13 +1,48 @@
 @import "~bootstrap/scss/bootstrap.scss";
-
-/* 
-
-    You can write your own styles here...
+.chain{
+    background: black;
+    width:10px;
+    height: 50px;
+    margin:auto;
+}
+.lights {
+    background: black;
+    width :150px;
+    height:350px;
+    padding:10px;
+    margin:auto;
     
+}
+.light1{
+    background:gray;
+    height: 100px;
+    width: 100px;
+    margin:auto;
+    border-radius: 50%;
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
+.light1.active{
+    background: red;
+}
+.light2{
+    background: gray;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin:auto;
+   
+}
+.light2.active{
+    background: goldenrod;
+}
+.light3{
+    background:gray;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin:auto;
+  
+}
+.light3.active{
+    background:green;
+}
