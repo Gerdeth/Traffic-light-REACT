@@ -11,28 +11,33 @@ export class Home extends Component {
 	}
 
 	render() {
-		let light1on = "";
-		let light2on = "";
-		let light3on = "";
-		if (this.state.color === "red") light1on = "active";
-		if (this.state.color === "goldenrod") light2on = "active";
-		if (this.state.color === "green") light3on = "active";
-
 		return (
 			<div>
 				<div className="chain" />
 				<div className="lights">
 					<div
 						onClick={() => this.setState({ color: "red" })}
-						className={"light1 " + light1on}
+						className={
+							this.state.color == "red"
+								? "light1 active"
+								: "light1"
+						}
 					/>
 					<div
 						onClick={() => this.setState({ color: "goldenrod" })}
-						className={"light2 " + light2on}
+						className={
+							this.state.color == "goldenrod"
+								? "light2 active"
+								: "light2"
+						}
 					/>
 					<div
 						onClick={() => this.setState({ color: "green" })}
-						className={"light3 " + light3on}
+						className={
+							this.state.color == "green"
+								? "light3 active"
+								: "light3"
+						}
 					/>
 				</div>
 			</div>
